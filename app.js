@@ -53,6 +53,10 @@ app.get('/bad', (req, res) => {
   });
 });
 
+app.get('/github', (req, res) => {
+  res.render('github.hbs');
+});
+
 app.listen(port, () => {
   console.log(`server up on port ${port}`);
 });

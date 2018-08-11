@@ -57,6 +57,10 @@ app.get('/github', (req, res) => {
   res.render('github.hbs');
 });
 
+app.get('/login', (req, res) => {
+  res.render('login.hbs')
+});
+
 app.listen(port, () => {
   console.log(`server up on port ${port}`);
 });
